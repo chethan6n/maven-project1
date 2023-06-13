@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Prod-Stage') {
             steps {
-                echo 'Hello Prod Env'
+                echo 'Hello Prod Env and cloning git'
                 git credentialsId: 'a820aff3-d009-46e0-93e4-b824cae9340d', url: 'https://github.com/chethan6n/maven-project1.git'
             }
         }
